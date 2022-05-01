@@ -17,6 +17,15 @@
     "url": "https://github.com/neszha/randx/issues"
   },
   "homepage": "https://github.com/neszha/randx#readme",
+  "keywords": [
+    "randx",
+    "random",
+    "random-array",
+    "random-key",
+    "random-and-store",
+    "back-end",
+    "front-end"
+  ],
   "devDependencies": {
     "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
