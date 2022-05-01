@@ -1,0 +1,29 @@
+{
+  "name": "randx",
+  "version": "0.0.0",
+  "description": "Module for randomizing arrays with position key",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neszha/randx.git"
+  },
+  "author": "Fanesa Hadi Pramana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neszha/randx/issues"
+  },
+  "homepage": "https://github.com/neszha/randx#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.0.3"
+  },
+  "dependencies": {
+    "randomstring": "^1.2.2"
+  }
+}
