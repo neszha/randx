@@ -1,11 +1,11 @@
 {
   "name": "randx",
   "version": "0.0.0",
-  "description": "Module for randomizing arrays with position key",
-  "main": "index.js",
   "type": "module",
+  "description": "Module for randomizing arrays with position key.",
+  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
