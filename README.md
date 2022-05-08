@@ -22,7 +22,7 @@ yarn add randx
 
 Generate random key.
 ```javascript
-import randx from 'randx';
+const randx = require('randx');
 
 randx.generateKey();
 // >> "mdBKQmuIUjdDDHaGOd7cfdniAO"
@@ -33,7 +33,7 @@ randx.generateKey(50);
 
 Random array.
 ```javascript
-import randx from 'randx';
+const randx = require('randx');
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -46,7 +46,7 @@ randx.randomArray(array);
 
 Random array with random key.
 ```javascript
-import randx from 'randx';
+const randx = require('randx');
 
 const randomKey1 = '123*#abc';
 const randomKey2 = 'abcdefg';

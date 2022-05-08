@@ -1,4 +1,4 @@
-import randx from '../index.js';
+const randx = require('../index');
 
 describe('Random Array (Basic Test)', () => {
     const data = {

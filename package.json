@@ -1,11 +1,11 @@
 {
   "name": "randx",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "1.1.0",
+  "type": "commonjs",
   "description": "Module for randomizing arrays with position key.",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "front-end"
   ],
   "devDependencies": {
-    "eslint": "^8.13.0",
+    "eslint": "^8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.1.4",

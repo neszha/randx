@@ -1,4 +1,4 @@
-import randomstring from 'randomstring';
+const randomstring = require('randomstring');
 
 const randx = {
     list: [],
@@ -60,4 +60,5 @@ const randx = {
     },
 };
 
-export default randx;
+// Exports default.
+module.exports = randx;
