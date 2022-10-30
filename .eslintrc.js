@@ -5,11 +5,11 @@ module.exports = {
         es2021: true,
         'jest/globals': true,
     },
-    extends: [
-        'airbnb-base',
+    extends: 'airbnb-base',
+    overrides: [
     ],
     parserOptions: {
-        ecmaVersion: 12,
+        ecmaVersion: 'latest',
     },
     plugins: ['jest'],
     rules: {
@@ -17,5 +17,6 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-console': 'off',
         'max-len': 'off',
+        'linebreak-style': 'off',
     },
 };

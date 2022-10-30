@@ -1,6 +1,6 @@
 {
   "name": "randx",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "commonjs",
   "description": "Module for randomizing arrays with position key.",
   "main": "index.js",
@@ -27,13 +27,11 @@
     "front-end"
   ],
   "devDependencies": {
-    "eslint": "^8.15.0",
+    "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^26.1.4",
     "jest": "^27.5.1"
   },
-  "dependencies": {
-    "randomstring": "^1.2.2"
-  }
+  "dependencies": {}
 }

@@ -25,10 +25,10 @@ Generate random key.
 const randx = require('randx');
 
 randx.generateKey();
-// >> "mdBKQmuIUjdDDHaGOd7cfdniAO"
+// >> "AHsi6c2k1BS2b4Jx4v391h1JC3"
 
 randx.generateKey(50);
-// >> "JdK3gfefeMAcqRulFVhWE5QlgqEMdVQ0Gg5iaJ8YhQGxvPa40o"
+// >> "1g0fBoI5h9183uRb4xG6EKm395q0Z9G21ibaE7RvJJn243Ph6Y"
 ```
 
 Random array.
@@ -38,10 +38,10 @@ const randx = require('randx');
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 randx.randomArray(array);
-// >> [7,8,6,1,9,2,5,4,3]
+// >> [3,8,4,7,2,5,6,9,1]
 
 randx.randomArray(array);
-// >> [7,4,5,2,8,9,6,3,1]
+// >> [3,1,8,7,4,9,2,5,6]
 ```
 
 Random array with random key.
@@ -50,17 +50,21 @@ const randx = require('randx');
 
 const randomKey1 = '123*#abc';
 const randomKey2 = 'abcdefg';
-const randomKey3 = randx.generateKey(26);
+const randomKey3 = '63369d5337987abed6a80ff4'; // ObjectId in MongoDb
+const randomKey4 = randx.generateKey(26);
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-randx.randomArray(array, randomKey1); // >> [9,8,6,5,1,4,3,7,2]
-randx.randomArray(array, randomKey1); // >> [9,8,6,5,1,4,3,7,2]
+randx.randomArray(array, randomKey1); // >> [7,5,1,9,3,2,6,8,4]
+randx.randomArray(array, randomKey1); // >> [7,5,1,9,3,2,6,8,4]
 
-randx.randomArray(array, randomKey2); // >> [5,6,7,8,9,1,2,3,4]
-randx.randomArray(array, randomKey2); // >> [5,6,7,8,9,1,2,3,4]
+randx.randomArray(array, randomKey2); // >> [1,2,3,8,9,5,4,7,6]
+randx.randomArray(array, randomKey2); // >> [1,2,3,8,9,5,4,7,6]
 
-randx.randomArray(array, randomKey3); // >> [3,5,1,2,7,4,9,6,8]
-randx.randomArray(array, randomKey3); // >> [3,5,1,2,7,4,9,6,8]
+randx.randomArray(array, randomKey3); // >> [9,2,1,6,5,3,4,8,7]
+randx.randomArray(array, randomKey3); // >> [9,2,1,6,5,3,4,8,7]
+
+randx.randomArray(array, randomKey4); // >> [5,2,6,9,7,1,3,8,4]
+randx.randomArray(array, randomKey4); // >> [5,2,6,9,7,1,3,8,4]
 
 ```
 

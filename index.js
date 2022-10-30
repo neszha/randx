@@ -1,4 +1,17 @@
-const randomstring = require('randomstring');
+const randomString = () => {
+    const numberRandom = Number(String(Math.random()).slice(2));
+    return numberRandom.toString(36);
+};
+
+const randomUperCase = (string) => {
+    const arrayString = string.split('');
+    for (let i = 0; i < arrayString.length; i += 1) {
+        if (Math.random() >= 0.5) {
+            arrayString[i] = arrayString[i].toUpperCase();
+        }
+    }
+    return arrayString.join('');
+};
 
 const randx = {
     list: [],
@@ -11,7 +24,15 @@ const randx = {
      * @returns String
      */
     generateKey(length = 26) {
-        return randomstring.generate({ length });
+        const randArray = [];
+        const minRandomString = 10;
+        for (let i = 0; i < Math.floor(length / minRandomString) + 1; i += 1) {
+            const strRandom = randomString();
+            const strUpercaseRandom = randomUperCase(strRandom);
+            randArray.push(strUpercaseRandom);
+        }
+        const mergeString = randArray.join('');
+        return mergeString.substring(0, length);
     },
 
     /**
@@ -27,6 +48,9 @@ const randx = {
         // Validate random key.
         if (this.randomKey === false) this.randomKey = this.generateKey();
         if (this.randomKey === '') return this.list;
+
+        // Reverse random key.
+        this.randomKey = this.randomKey.split('').reverse().join('');
 
         // Generate key.
         this.destKey = [];
